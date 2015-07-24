@@ -1,0 +1,26 @@
+// Mixins
+
+.transition-all() {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.background-cover() {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.serif() {
+	font-family: "Georgia", "Times New Roman", "宋体", "SimSun", "FangSong", "仿宋", "STFangSong", "华文仿宋", serif;
+}
+
+.sans-serif () {
+	font-family: "Tahoma", "Arial", "Helvetica", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", "宋体", "SimSun", "STXihei", "华文细黑", sans-serif;
+}
+
+.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+	text-shadow: @string;
+}

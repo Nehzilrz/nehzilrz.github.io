@@ -1,0 +1,45 @@
+# Site settings
+title: 平芜泫寂
+author: 平芜泫
+header-img: img/home-bg.jpg
+email: public@korepwx.com
+description: "平芜尽处是春山，行人更在春山外。泫，落水成泪。@平芜泫的博客、个人网站。Computer Science／ACG爱好者。"
+baseurl: ""
+url: "http://ipwx.me"
+
+github_username: korepwx
+# twitter_username: SBootstrap
+# facebook_username:  IronSummitMedia
+gplus_username: "平芜泫の幻想郷"
+# zhihu_username: ipwx
+# weibo_username: korepwx
+
+# Specify the navigation items by hand
+navigation:
+  -
+    title: 分类
+    url: /categories/
+  -
+    title: 标签云
+    url: /tags/
+  -
+    title: 关于我
+    url: /about/
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions: ["footnotes", "tables", "with_toc_data", "no_intra_emphasis", "strikethrough", "superscript"]
+
+highlighter: pygments
+permalink: /:year/:month/:title/
+paginate: 5
+exclude: ["tools","less","node_modules","Gruntfile.js","package.json","README.md"]
+excerpt_separator: <!--more-->
+use_katex: true
+
+# use Github Flavored Markdown !important
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+
+# kramdown:
+#   input: GFM

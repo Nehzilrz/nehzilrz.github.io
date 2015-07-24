@@ -1,0 +1,41 @@
+---
+layout: page
+description: "平芜尽处是春山，行人更在春山外。泫，落水成泪。"
+---
+
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+    </a>
+    <div class="post-content-preview">
+        {{ post.excerpt }}
+    </div>
+    <p class="post-meta">{% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} 于 {{ post.date | date: "%Y 年 %-m 月 %-d 日" }} 
+        发布{% if post.category %}在 <a href="/categories/#{{ post.category }}" title="{{ post.category }}">{{ post.category }}</a> 分类下{% endif %}
+    </p>
+</div>
+<hr>
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 更新的文章</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">更老的文章 &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}

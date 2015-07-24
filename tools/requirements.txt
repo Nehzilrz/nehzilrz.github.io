@@ -1,0 +1,5 @@
+PyYaml
+click
+six
+python-dateutil
+python-slugify
