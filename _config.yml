@@ -1,16 +1,15 @@
 # Site settings
-title: 平芜泫寂
+title: Nehzilrz
 author: 平芜泫
 header-img: img/home-bg.jpg
-email: public@korepwx.com
-description: "平芜尽处是春山，行人更在春山外。泫，落水成泪。@平芜泫的博客、个人网站。Computer Science／ACG爱好者。"
+email: me@patpat.net
+description: "没了"
 baseurl: ""
-url: "http://ipwx.me"
+url: "http://patpat.net"
 
-github_username: korepwx
+github_username: nehzilrz
 # twitter_username: SBootstrap
 # facebook_username:  IronSummitMedia
-gplus_username: "平芜泫の幻想郷"
 # zhihu_username: ipwx
 # weibo_username: korepwx
 
