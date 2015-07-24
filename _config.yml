@@ -1,11 +1,11 @@
 # Site settings
 title: Nehzilrz
-author: 平芜泫
+author: 李振
 header-img: img/home-bg.jpg
 email: me@patpat.net
 description: "没了"
 baseurl: ""
-url: "http://nehzilrz.github.io"
+url: "http://nehzilrz.github.io/index.html"
 
 github_username: nehzilrz
 # twitter_username: SBootstrap
